@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breno Music Player</title>
+    
+    <link rel="stylesheet" href="https://www.unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+
+<body>
+    <main class="player">
+
+        <div class="logo">
+            <img src="./src/image/logoimg.svg" alt="playlist photo">
+        </div>
+
+        <div class="musicAndAutor">
+        <span id="musicName"></span>
+        <span id="musicAutor"></span>
+        </div>
+
+        <audio id="player" src=""></audio>
+
+        <div class="controls">
+            <button id="prevButton"><img src="./src/image/prevbutton.svg" alt="previous music"></button>
+            <button id="playPauseButton"><img src="./src/image/playbutton.svg" alt="play" id="playPauseButtonImg"></button>
+            <button id="nextButton"><img src="./src/image/nextbutton.svg" alt="next music"></button>
+        </div>
+    
+
+        <div class="footer">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <div class="time">
+                <span id="currentTime">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+    </main>
+<script type="module" src="./src/js/index.js"></script>
+</body>
+</html>

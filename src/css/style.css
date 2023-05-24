@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 30px;
+       
+    position: absolute;
+    width: 270px;
+    height: 500px;
+    left: 10vh;
+    top: 10vh;
+    
+    background-color: #2A2141;
+    border-radius: 10px;
+}
+
+.logo img {
+    width: 190px;
+    height: 190px;
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid #000000;   
+}
+
+.musicAndAutor {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 10px;
+    width: 190px;
+    height: 60px;
+}
+
+#musicName {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    width: 190px;
+    height: 200px;
+    width: 100%;
+    color: #E1E1E6;
+    overflow: hidden;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+                
+}
+
+#musicAutor {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    width: 190px;
+    height: 19px;
+    width: 100%;
+    opacity: 0.7;
+    color: #E1E1E6;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 50px;
+    width: 190px;
+    height: 30px;    
+    background-color: #2A2141;     
+}
+
+#prevButton, #nextButton, #playPauseButton {
+    width: 30px;
+    height: 30px;
+    background-color: #2A2141;
+    color: #E1E1E6;
+    transition: all .2s;
+    cursor: pointer;
+    border: none;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.time span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;   
+    opacity: 0.7;
+    color: #E1E1E6;    
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    gap: 10px;
+    width: 190px;
+    height: 40px;
+}
+
+.progress-bar {
+    height: 6px;
+    background-color: #D9D9D9;
+    cursor: pointer;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.progress {
+    height: 6px;
+    background-color: rgb(97, 65, 126);
+    border-radius: 10px;   
+}
+
+
+
+
